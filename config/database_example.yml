@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  host: localhost
+  database: apprentinces_pernix_dev
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  host: localhost
+  database: apprentinces_pernix_test
+  pool: 5
