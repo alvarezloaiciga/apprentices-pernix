@@ -368,47 +368,7 @@
       <div class="contact-box one-half-responsive last delay-1000 animated fadeIn">
         <h5 class="hide-if-mobile">Apply!</h5>
         <div class="contact-form no-bottom"> 
-          <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
-            <div class="big-notification green-notification full-bottom">
-              <h5 class="uppercase">Your message has been sent</h5>
-              <a href="#" class="close-big-notification">x</a>
-              <p>Your application is going to be reviewed by one of our mentors, we will let you know if you are qualified for this adventure!</p>
-            </div>    
-          </div>
-          <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
-            <fieldset class="full-bottom">  
-              <div class="formFieldWrap container">
-                <label class="field-title contactNameField" for="contactNameField">
-                  Name
-                  <em class="formValidationError no-bottom" id="contactNameFieldError">field is required!</em>
-                  <span>(required)</span>
-                </label>
-                <input type="text" name="contactNameField" value="" class="contactField field-deco requiredField" id="contactNameField"/>
-              </div>
-              <div class="formFieldWrap container">
-                <label class="field-title contactEmailField" for="contactEmailField">
-                  Email 
-                  <em class="formValidationError no-bottom" id="contactEmailFieldError">field is required!</em>
-                  <em class="formValidationError no-bottom" id="contactEmailFieldError2">address is not valid!</em>
-                  <span>(required)</span>
-                </label>
-                <input type="text" name="contactEmailField" value="" class="contactField field-deco requiredField requiredEmailField" id="contactEmailField"/>
-              </div>
-              <div class="clear"></div>
-              <div class="formTextareaWrap container">
-                <label class="field-title contactMessageTextarea" for="contactMessageTextarea">
-                  Github 
-                  <span>(required)</span>
-                  <em class="formValidationError no-bottom" id="contactMessageTextareaError">field is empty</em>
-                </label>
-                <input type="text" name="contactGithubField" value="" class="contactField field-deco requiredField requiredGithubField" id="contactGithubField"/>
-              </div>
-              <div class="formSubmitButtonErrorsWrap">
-                <i class="fa fa-envelope"></i>
-                <input type="submit" class="buttonWrap contactSubmitButton" id="contactSubmitButton" value="Apply" data-formId="contactForm"/>
-              </div>
-            </fieldset>
-          </form>       
+          <%= render partial: 'applicant_form' %>
         </div>
       </div>
     </div>

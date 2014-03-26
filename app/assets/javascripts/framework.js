@@ -114,12 +114,7 @@ $(document).ready(function(){
 
 	
 	$('.close-big-notification').click(function(){
-		$(this).parent().animate({
-			height:0,
-			marginBottom:0,
-			padding:0,
-		  }, 300, 'easeInOutExpo', function () {;
-		}).fadeOut(0);
+		$(this).parent().parent().toggleClass("flash-hidden", true);
 		return false;
 	});
 	

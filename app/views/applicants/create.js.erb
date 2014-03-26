@@ -1,0 +1,19 @@
+$("#errors-list").empty();
+
+if(<%= @applicant.valid? %>){
+  cleanForm();
+  $("#formSuccessMessageWrap").toggleClass("flash-hidden", false);
+  $("#formFailureMessageWrap").toggleClass("flash-hidden", true);
+} else {
+  $("#formSuccessMessageWrap").toggleClass("flash-hidden", true);
+  $("#formFailureMessageWrap").toggleClass("flash-hidden", false);
+  <% @applicant.errors.full_messages.each do |error| %>
+    $("#errors-list").append("<li><%=escape_javascript(error)%></li>");
+  <% end %>
+}
+
+function cleanForm(){
+  $(':input','#contactForm')
+  .not(':button, :submit, :reset, :hidden')
+  .val('')
+}
