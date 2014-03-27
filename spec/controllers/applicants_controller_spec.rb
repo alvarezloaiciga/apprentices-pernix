@@ -15,16 +15,12 @@ describe ApplicantsController, "#create" do
 
   it "creates a new applicant with the params" do
     expect(Applicant).to receive(:new).with(params["applicant"]) { applicant }
-    post :create, params
+    post :create, params.merge(format: :js)
   end
 
   it "saves the object" do
     allow(Applicant).to receive(:new) { applicant }
     expect(applicant).to receive(:save)
-    post :create, params
+    post :create, params.merge(format: :js)
   end
-
-  context "when object is saved"
-  context "when object is not saved"
-
 end
