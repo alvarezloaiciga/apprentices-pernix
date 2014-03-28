@@ -18,3 +18,4 @@
 config/database.yml
 .keep
 .DS_Store
+.env
