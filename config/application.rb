@@ -11,5 +11,8 @@ module ApprenticesPernix
   class Application < Rails::Application
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
     config.serve_static_assets = true
+    config.assets.compile = true
+    config.assets.precompile += %w( active_admin.css active_admin/print.css active_admin.js print.css)
+    config.assets.enabled = true
   end
 end
