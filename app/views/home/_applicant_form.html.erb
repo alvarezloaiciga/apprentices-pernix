@@ -1,4 +1,4 @@
-<%= form_for @applicant, html: { class: "contactForm", id: "contactForm" }, remote: true do |f| %>
+<%= form_for @applicant, html: { class: "contactForm", id: "contactForm" }, remote: true, :authenticity_token => true do |f| %>
   <div class="formSuccessMessageWrap flash-hidden" id="formSuccessMessageWrap">
     <div class="big-notification green-notification full-bottom" id="apply-sucess">
       <h5 class="uppercase">Awesome!</h5>
