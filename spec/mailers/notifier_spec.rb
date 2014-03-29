@@ -1,8 +1,9 @@
 require 'spec_helper'
 
 describe Notifier, "#applicant_apply" do
+  let(:date) { DateTime.new(2014, 1, 1, 12, 12, 12) }
   let(:applicant) { double(:applicant, name: 'A_NAME', email: 'A_MAIL',
-                           github: 'A_GIT', created_at: 'A_DATE') }
+                           github: 'A_GIT', created_at: date) }
   subject { described_class.applicant_apply(applicant) }
 
   it "renders the subject" do
@@ -22,6 +23,6 @@ describe Notifier, "#applicant_apply" do
   end
 
   it "includes the applicant creation date in the body" do
-    expect(subject.body).to include(applicant.created_at)
+    expect(subject.body).to include('01/01/2014 - 12:12:12')
   end
 end
