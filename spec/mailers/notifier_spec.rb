@@ -6,23 +6,9 @@ describe Notifier, "#applicant_apply" do
                            github: 'A_GIT', created_at: date) }
   subject { described_class.applicant_apply(applicant) }
 
-  it "renders the subject" do
-    expect(subject.subject).to eq('New applicant for the apprentice program')
-  end
-
-  it "includes the applicant name in the body" do
-    expect(subject.body).to include(applicant.name)
-  end
-
-  it "includes the applicant email in the body" do
-    expect(subject.body).to include(applicant.email)
-  end
-
-  it "includes the applicant github in the body" do
-    expect(subject.body).to include(applicant.github)
-  end
-
-  it "includes the applicant creation date in the body" do
-    expect(subject.body).to include('01/01/2014 - 12:12:12')
-  end
+  its(:subject) { should == 'New applicant for the apprentice program' }
+  its(:body) { should include(applicant.name) }
+  its(:body) { should include(applicant.email) }
+  its(:body) { should include(applicant.github) }
+  its(:body) { should include('01/01/2014 - 12:12:12') }
 end
