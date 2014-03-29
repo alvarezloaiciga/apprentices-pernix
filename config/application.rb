@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 
 module ApprenticesPernix
   class Application < Rails::Application
+    config.time_zone = 'Central America'
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
     config.serve_static_assets = true
     config.assets.compile = true
