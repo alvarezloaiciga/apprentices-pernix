@@ -1,0 +1,17 @@
+<% if employee.position == "Apprentice" %>
+  <div data-rel="cat1" class="cat2 filterable-item" title="Category 3 Filtered Caption">
+    <%= image_tag "preload.gif", class: "preload responsive-image", "data-original" => asset_path("apprentices/#{employee.name}.jpg", type: :image)%>
+    <span class="filterable-caption">
+      <strong><%=employee.name%></strong>
+      <em><%=employee.position%></em>
+    </span>
+  </div>
+<% else %>
+  <div data-rel="cat2" class="cat1 filterable-item" title="Category 4 Filtered Caption">
+    <%= image_tag "preload.gif", class: "preload responsive-image", "data-original" => asset_path("apprentices/#{employee.name}.jpg", type: :image)%>
+    <span class="filterable-caption">
+      <strong><%=employee.name%></strong>
+      <em><%=employee.position%></em>
+    </span>
+  </div>
+<% end %>
