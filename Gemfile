@@ -15,7 +15,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'sprockets_better_errors'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 group :doc do
   gem 'sdoc', require: false
