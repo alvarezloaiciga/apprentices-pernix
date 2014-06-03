@@ -1,17 +1,18 @@
 <div class="header">
   <div class="box-960">
       <div class="header-elements">
-    <div class="logo">
-      <%= image_tag "misc/logo.png" %>
+        <div class="logo">
+          <%= image_tag "misc/logo.png", :class => "style_image" %>
     </div>
     <a href="#" class="deploy-navigation"></a>
     </div>
     <div class="navigation">
-      <a data-scroll-nav="0" href="#">  <i class="fa fa-arrow-up"></i>   <em>Home</em>      </a>
+      <a data-scroll-nav="0" href="#">  <i class="fa fa-picture-o"></i>   <em>Home</em>      </a>
       <a data-scroll-nav="1" href="#">  <i class="fa fa-home"></i>     <em>Welcome</em>     </a>
-      <a data-scroll-nav="2" href="#">  <i class="fa fa-user"></i>     <em>About</em>     </a>
-      <a data-scroll-nav="3" href="#">  <i class="fa fa-picture-o"></i> <em>Team</em> </a>
-      <a id= "apply-nav" data-scroll-nav="4" href="#">  <i class="fa fa-envelope-o"></i>   <em>APPLY!</em>    </a>
+      <a data-scroll-nav="2" href="#">  <i class="fa fa-user"></i>     <em>Pet Projects</em>     </a>
+      <a data-scroll-nav="3" href="#">  <i class="fa fa-picture-o"></i> <em>About</em> </a>
+      <a data-scroll-nav="4" href="#">  <i class="fa fa-picture-o"></i> <em>Team</em> </a>
+      <a id= "apply-nav" data-scroll-nav="5" href="#">  <i class="fa fa-envelope-o"></i>   <em>Apply!</em>    </a>
         </div>
     </div>
   </div>
@@ -27,9 +28,29 @@
             <div class="fullscreen-caption">
                 <h3>Learn by doing!</h3>
                 <p>There is no way of learning something new, like being in action</p>
-                <a data-scroll-nav="1" href="#" class="button button-green button-slider">Check it out!</a>
+                <a data-scroll-nav="1" href="#" class="button button-green button-slider" style="margin-left: 635px;">Check it out!</a>
             </div>
             <%= image_tag "general-fullslider/1.jpg", class: "full-image" %>
+        </div>
+        <div class="slide-image item">
+            <div class="slider-overlay"></div>
+            <div class="fullscreen-caption">
+                <h3>Pet Projects</h3>
+                <p>
+                 Be creative, innovative... 
+                </p>
+                <a data-scroll-nav="2" href="#" class="button button-green button-slider" style="margin-left: 635px;">Challenge yourself!</a>
+            </div>
+            <%= image_tag "general-fullslider/5.jpg", class: "full-image" %>
+        </div>
+        <div class="slide-image item">
+            <div class="slider-overlay"></div>
+            <div class="fullscreen-caption">
+                <h3>How we work?</h3>
+                <p>Always the best way for a person to learn</p>
+                <a data-scroll-nav="3" href="#" class="button button-green button-slider" style="margin-left: 635px;">Check it out!</a>
+            </div>
+            <%= image_tag "general-fullslider/7.jpg", class: "full-image" %>
         </div>
         <div class="slide-image item">
             <div class="slider-overlay"></div>
@@ -38,7 +59,7 @@
                 <p>
                  We provide all our knowledge.
                 </p>
-                <a data-scroll-nav="3" href="#" class="button button-green button-slider">Meet the team!</a>
+                <a data-scroll-nav="4" href="#" class="button button-green button-slider" style="margin-left: 635px;">Meet the team!</a>
             </div>
             <%= image_tag "general-fullslider/2.jpg", class: "full-image" %>
         </div>
@@ -49,7 +70,7 @@
                 <p>
                   As easy as apply and join us
                 </p>
-                <a data-scroll-nav="4" href="#" class="button button-green button-slider">APPLY!</a>
+                <a data-scroll-nav="5" href="#" class="button button-green button-slider" style="margin-left: 635px;">Apply!</a>
             </div>
             <%= image_tag "general-fullslider/4.jpg", class: "full-image" %>
         </div>
@@ -73,12 +94,12 @@
       <div class="decoration"></div>
         <div class="welcome-container larger-text">
         <h1 class="center-text heading">The programme</h1>
-            <p class="center-text">
-              After two years of intensive research and experiments, we have finally created a formal process that
-              can make you a <strong>Software Consultant in 6 months</strong>. We have decided to structure
-              this process based on four fundamental pilars: <strong>Pair programming</strong>,
+        <p class="center-text">
+              After two years of intensive research and experiments, we have finally created a formal process that can make 
+              you a creative and innovated person, a developer of new ideas, solutions and services. This can be achieved 
+              through pet projects, which are structured on four fundamental pilars: <strong>Pair programming</strong>,
               <strong>Theoretical Training</strong>, <strong>Experience</strong> and <strong>Soft Skills</strong>
-            </p>
+        </p>
         </div>
         <div class="orange-decoration hide-if-mobile animated fadeIn"></div>
         <div class="decoration hide-if-responsive"></div>
@@ -92,43 +113,154 @@
     </div>
     <div class="features-slider">
         <div class="center-icon-column blue-center-icon-column width-80 animated slideInLeft">
-            <h1><i class="fa fa-code fa-3x"></i></h1>
-            <h5>Infinite Lessons</h5>
+            <h1><i class="fa fa-lightbulb-o fa-3x"></i></h1>
+            <h5>Come up with an idea</h5>
             <div class="center-column-icon-decoration"></div>
             <p>
-                We've put all our experience about software development into 
-                creating the best lessons that will take you to be a great
-                software consultant in a near future.
+                We develop through Pet Projects and we are looking for creative and innovative 
+                people who wish to develop their ideas using our experience about software 
+                development.
             </p>
         </div>
-        <div class="center-icon-column red-center-icon-column width-80 animated slideInDown">
-            <h1><i class="fa fa-book fa-3x"></i></h1>
-            <h5>Books</h5>
-            <div class="center-column-icon-decoration"></div>
-            <p>
-                After reading many technical and nontechnical books, we have
-                selected the best books you can read to grow not only as a professional
-                but also as a person.
-            </p>
-        </div>
-        <div class="center-icon-column green-center-icon-column width-80 animated slideInDown">
-            <h1><i class="fa fa-youtube-play fa-3x"></i></h1>
-            <h5>Videos</h5>
-            <div class="center-column-icon-decoration"></div>
-            <p>
-                Being part of the Software Craftmanship is in good part following the
-                creators of it. That's the reason we have accumulated hours of videos
-                this guys have created for you.
-            </p>
-        </div>
-        <div class="center-icon-column dark-center-icon-column width-80 animated slideInRight">
+        <div class="center-icon-column dark-center-icon-column width-80 animated slideInDown">
             <h1><i class="fa fa-users fa-3x"></i></h1>
             <h5>Mentor</h5>
             <div class="center-column-icon-decoration"></div>
             <p>
                 You really deserve the experience and the expertise of a person that
                 can guide you and take you to the next level. That's the reason we have the best
-                mentors available for you!.
+                mentors available for you!
+            </p>
+        </div>
+        <div class="center-icon-column red-center-icon-column width-80 animated slideInDown">
+            <h1><i class="fa fa-code fa-3x"></i></h1>
+            <h5>Reviews</h5>
+            <div class="center-column-icon-decoration"></div>
+            <p>
+                Mentors will review your idea, your code and your interest to be part of our team. 
+                With this, you can improve your idea and be closer to be part of our team. Take the
+                challenge, is up to you!
+            </p>
+        </div>
+        <div class="center-icon-column green-center-icon-column width-80 animated slideInRight">
+            <h1><i class="fa fa-check fa-3x"></i></h1>
+            <h5>Join Us!</h5>
+            <div class="center-column-icon-decoration"></div>
+            <p>
+                After reviewing your idea and see your potential, you can join our company 
+                and be part of the group of collaborators. Also grow not only as a professional
+                but also as a person.
+            </p>
+        </div>
+    </div>
+</div> 
+
+<div class="decoration box-960"></div> 
+
+<div class="parallax-strip-section full-bottom">
+  <div class="parallax parallax-quotes bg1" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true">
+    <div class="parallax-slider-wrapper item">
+      <div class="parallax-overlay"></div>
+      <div class="quotes-slider item box-960">
+        <div class="width-70">
+          <h1 class="center-text">
+            "I believe in innovation and that the way you get innovation is you fund research and you learn the basic facts."
+          </h1>
+          <p class="right-text">
+            Bill Gates
+          </p>
+        </div>
+        <div class="width-70">
+          <h1 class="center-text">
+            "You see things; and you say, 'Why?' But I dream things that never were; and I say, 'Why not'?"
+          </h1>
+          <p class="right-text">
+            George Bernard Shaw
+          </p>
+        </div>
+        <div class="width-70">
+          <h1 class="center-text">
+            "A leader is one who knows the way, goes the way, and shows the way."
+          </h1>
+          <p class="right-text">
+            John Maxwell
+          </p>
+        </div> 
+        <div class="width-70">
+          <h1 class="center-text">
+            "Ability is what you're capable of doing. Motivation determines what you do. Attitude determines how well you do it."
+          </h1>
+          <p class="right-text">
+            Lou Holtz
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content" data-scroll-index="2">
+  <div class="box-960">
+      <div class="decoration"></div>
+        <div class="welcome-container larger-text">
+        <h1 class="center-text heading">Pet Projects</h1>
+            <p class="center-text">
+              Our program consists of an introduction and a set of challenges through 
+              <strong>pet projects</strong>, in order to provide you with the experience 
+              in the necessary tools to become a <strong>professional software developer</strong>.
+              The opportunity to learn is always present in our collaborators, and pet
+              projects will help you to implement that <strong>knowledge</strong>. We look for: 
+            </p>
+        </div>
+        <div class="orange-decoration hide-if-mobile animated fadeIn"></div>
+        <div class="decoration hide-if-responsive"></div>
+  </div>
+</div>
+
+<div class="features-slider-wrapper width-90 half-bottom item">
+    <div class="features-slider-controls">
+        <a href="#" class="prev-features-slider animated fadeIn"></a>
+        <a href="#" class="next-features-slider animated fadeIn"></a>
+    </div>
+   <div class="features-slider">
+        <div class="center-icon-column blue-center-icon-column width-80 animated slideInLeft">
+          <h1><i class="fa fa-rocket fa-3x preload responsive-image"></i></h1>
+          <h5>Innovation</h5>
+          <div class="center-column-icon-decoration"></div>
+            <p>
+              We seek apprentices with the desire to implement new features, applying new ideas, 
+              concepts and practices, so that their knowledge increased as productivity. If you 
+              have an idea, this is your oportunity!
+            </p>
+        </div>
+        <div class="center-icon-column green-center-icon-column width-80 animated slideInLeft">
+            <h1><i class="fa fa-magic fa-3x"></i></h1>
+            <h5>Creativity</h5>
+            <div class="center-column-icon-decoration"></div>
+            <p>
+              Creativity is an important skill in our apprentices. We want you to see problems 
+              as opportunities, and generate these innovative ideas to solve these problems in 
+              pet projects. We want to see you in action with a clear mind!
+            </p>
+        </div>
+        <div class="center-icon-column red-center-icon-column width-80 animated slideInRight">
+            <h1><i class="fa fa-user fa-3x"></i></h1>
+            <h5>Leadership</h5>
+            <div class="center-column-icon-decoration"></div>
+            <p>
+              We seek that enthusiasm for a common goal in pet projects, so that our apprentices 
+              lead others to be creative and innovative, making good decisions for the team and 
+              our company. Be a leader!
+            </p>
+        </div>
+        <div class="center-icon-column dark-center-icon-column width-80 animated slideInRight">
+            <h1><i class="fa fa-thumbs-o-up fa-3x"></i></h1>
+            <h5>Motivation</h5>
+            <div class="center-column-icon-decoration"></div>
+            <p>
+              We want our apprentices always be motivated to face new challenges, create new ideas 
+              with their pet projects and provide this motivation to others. We want people interested 
+              in learning and willing to improve! 
             </p>
         </div>
     </div>
@@ -136,7 +268,7 @@
         
 <div class="decoration box-960"></div> 
 
-<div class="parallax-box bg1" data-scroll-index="2" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true">
+<div class="parallax-box bg1" data-scroll-index="3" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true">
   <div class="content dark-content item">
   <div class="box-960">
       <div class="decoration"></div>
@@ -198,7 +330,7 @@
     </div>
 </div>
 
-<div class="content" data-scroll-index="3">
+<div class="content" data-scroll-index="4">
   <div class="box-960">
       <div class="decoration"></div>
         <div class="welcome-container larger-text full-bottom animated slideInDown">
@@ -219,35 +351,8 @@
         <a href="#" class="cat-button cat1b">Mentors</a>
                 <a href="#" class="cat-button cat2b">Apprentices</a>
       </div>
-    </div>
-    <div data-rel="cat1" class="cat2 filterable-item" title="Category 1 Filtered Caption">
-      <%= image_tag "preload.gif", class: "preload responsive-image", "data-original" => asset_path("apprentices/erick.jpg", type: :image)%>
-      <span class="filterable-caption">
-        <strong>Erick Castillo</strong>
-        <em>Rails apprentice</em>
-      </span>
-    </div>
-    <div data-rel="cat1" class="cat2 filterable-item" title="Category 2 Filtered Caption">
-      <%= image_tag "preload.gif", class: "preload responsive-image", "data-original" => asset_path("apprentices/alberto.jpg", type: :image)%>
-      <span class="filterable-caption">
-        <strong>Alberto Chacon</strong>
-        <em>Rails apprentice</em>
-      </span>
-    </div>
-    <div data-rel="cat1" class="cat2 filterable-item" title="Category 3 Filtered Caption">
-      <%= image_tag "preload.gif", class: "preload responsive-image", "data-original" => asset_path("apprentices/danilo.jpg", type: :image)%>
-      <span class="filterable-caption">
-        <strong>Danilo Sanchez</strong>
-        <em>Rails apprentice</em>
-      </span>
-    </div>
-    <div data-rel="cat2" class="cat1 filterable-item" title="Category 4 Filtered Caption">
-      <%= image_tag "preload.gif", class: "preload responsive-image", "data-original" => asset_path("apprentices/alvarez.jpg", type: :image)%>
-      <span class="filterable-caption">
-        <strong>Macho</strong>
-        <em>Rails mentor</em>
-      </span>
-    </div>
+    </div> 
+    <%= render @employees %>
         <div class="clear"></div>
     </div>
     <div class="decoration box-960"></div>
@@ -287,7 +392,7 @@
     </div>
 </div>
 
-<div class="content" data-scroll-index="4">
+<div class="content" data-scroll-index="5">
   <div class="box-p80">
     <div class="decoration"></div>
     <div class="container larger-text animated slideInDown">
@@ -300,10 +405,10 @@
     <div class="container services-slider-wrapper">
       <div class="services-slider">
         <div class="column-3 width-70 animated slideInLeft">
-          <%= image_tag "general/tic_tac_toe.png" %>
-          <h5 class="heading">Tic Tac Toe</h5>
+          <%= image_tag "general/idea.png" %>
+          <h5 class="heading">Idea or Project</h5>
           <p>
-          Programme a Tic Tac Toe in a new programming language you have not used before, we can recommend you use Ruby or Clojure
+          Come and join us with an idea or a project that you have been working on. 
           </p>
           <div class="clear"></div>
         </div>
@@ -312,7 +417,7 @@
           <%= image_tag "general/github.png" %>
           <h5 class="heading">Upload</h5>
           <p>
-            Upload the Tic Tac Toe code to Github.
+            Upload the code to Github.
           </p>
           <div class="clear"></div>
         </div>
@@ -356,9 +461,9 @@
         <div class="one-half last no-bottom delay-500 animated slideInRight">
           <h6>Get Social:</h6>
           <p>
-          <a href="#" class="contact-icon"><i class="fa fa-facebook-square"></i>PernixSolutions</a><br>
-          <a href="#" class="contact-icon"><i class="fa fa-twitter-square"></i>@PernixSolutions</a><br>
-          <a href="#" class="contact-icon"><i class="fa fa-google-plus-square"></i>PernixSolutions</a>
+          <a href="https://www.facebook.com/PernixSolutionsCR" class="contact-icon"><i class="fa fa-facebook-square"></i>PernixSolutions</a><br>
+          <a href="https://twitter.com/PernixSolutions" class="contact-icon"><i class="fa fa-twitter-square"></i>@PernixSolutions</a><br>
+          <a href="https://plus.google.com/114450962753002334855/posts" class="contact-icon"><i class="fa fa-google-plus-square"></i>PernixSolutions</a>
           </p>
         </div>
       </div>
@@ -381,9 +486,9 @@
   <div class="decoration"></div>
     <div class="footer full-bottom">
       <div class="footer-social-icons full-bottom">
-        <a href="#" class="facebook-footer-icon animated slideInLeft"><i class="fa fa-facebook fa-2x"></i></a>
-        <a href="#" class="twitter-footer-icon animated slideInDown"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="#" class="google-footer-icon animated slideInRight"><i class="fa fa-google-plus fa-2x"></i></a>
+        <a href="https://www.facebook.com/PernixSolutionsCR" class="facebook-footer-icon animated slideInLeft"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/PernixSolutions" class="twitter-footer-icon animated slideInDown"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://plus.google.com/114450962753002334855/posts" class="google-footer-icon animated slideInRight"><i class="fa fa-google-plus fa-2x"></i></a>
       </div>
       <p class="center-text no-bottom">Copyright 2014 - Pernix. All rights reserved.</p>
     </div>
